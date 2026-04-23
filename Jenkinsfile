@@ -33,5 +33,12 @@ pipeline {
                 sh 'docker push viratsonawane/my-flask-app:latest'
             }
         }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                sh 'kubectl rollout restart deployment studypath-api-deployment'
+                sh 'kubectl get pods'
+            }
+        }
     }
 }
