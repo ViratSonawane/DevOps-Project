@@ -1,19 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>StudyPath AI - Live</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPath AI | Fueling Ambitions</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding-top: 50px; background: #f4f4f9; }
-        .card { background: rgb(123, 30, 30); padding: 20px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; }
-        .status { color: #27ae60; font-weight: bold; }
+        :root { --primary: #5d3fd3; --bg-gradient: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%); }
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-gradient); color: #333; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .logo { font-weight: bold; font-size: 24px; color: #2e7d32; display: flex; align-items: center; gap: 10px; }
+        
+        /* Updated CSS for the anchor tags */
+        .nav-links a { margin: 0 15px; cursor: pointer; font-weight: 500; text-decoration: none; color: #333; transition: 0.2s; }
+        .nav-links a:hover { color: var(--primary); }
+        
+        .btn-apply { background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; border: none; font-weight: bold; cursor: pointer; }
+        
+        .hero { padding: 80px 8%; display: flex; align-items: center; justify-content: space-between; }
+        .hero-text { max-width: 50%; }
+        .hero-tag { color: #2e7d32; font-weight: bold; margin-bottom: 10px; display: block; }
+        .hero-text h1 { font-size: 48px; line-height: 1.2; margin: 10px 0; color: #1b5e20; }
+        .hero-text h1 span { color: var(--primary); }
+        .hero-text p { font-size: 18px; color: #666; margin-bottom: 30px; }
+        
+        .container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 8% 80px; }
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        .card i { font-size: 40px; margin-bottom: 15px; display: block; }
+        .card h3 { margin: 10px 0; color: #1b5e20; }
+        .card p { color: #777; font-size: 14px; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>🎓 StudyPath AI Dashboard</h1>
-        <p>Status: <span class="status">LIVE & DEPLOYED</span></p>
-        <p>Welcome, Virat! This version was deployed via Jenkins CD Pipeline.</p>
+    <nav>
+        <div class="logo">🎓 StudyPath AI</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/pathways">Pathways</a>
+            <a href="/community">Community</a>
+        </div>
+        <button class="btn-apply">Get Started</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <span class="hero-tag">◆ Empowering Students. Navigating Futures.</span>
+            <h1>Plan your career journey with <span>clarity and confidence</span></h1>
+            <p>Access AI-driven roadmaps, expert academic advice, and a supportive network so you can focus on what truly matters: <strong>Building Your Future.</strong></p>
+        </div>
+        <div class="hero-image">
+            <div style="font-size: 150px;">📚</div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="card">
+            <i>🔍</i>
+            <h3>Smart Roadmap</h3>
+            <p>Find the best career path in the shortest time using AI analysis.</p>
+        </div>
+        <div class="card">
+            <i>📝</i>
+            <h3>Admission Guide</h3>
+            <p>Choose the right university based on your profile and goals.</p>
+        </div>
+        <div class="card">
+            <i>🤝</i>
+            <h3>Peer Support</h3>
+            <p>Join a strong network of 10,000+ students and alumni sharing insights.</p>
+        </div>
     </div>
 </body>
 </html>
